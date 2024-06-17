@@ -11,6 +11,11 @@
 		AD960AD92C1FF5E00030629E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD960AD82C1FF5E00030629E /* ContentView.swift */; };
 		AD960ADB2C1FF5E10030629E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD960ADA2C1FF5E10030629E /* Assets.xcassets */; };
 		AD960ADE2C1FF5E10030629E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD960ADD2C1FF5E10030629E /* Preview Assets.xcassets */; };
+		AD960AE52C1FF7A80030629E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD960AE42C1FF7A80030629E /* AppDelegate.swift */; };
+		AD960AE82C1FF7D20030629E /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = AD960AE72C1FF7D20030629E /* GoogleMobileAds */; };
+		AD960AEB2C1FF8BF0030629E /* AdmobBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD960AEA2C1FF8BF0030629E /* AdmobBannerViewController.swift */; };
+		AD960AEE2C1FF8D60030629E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD960AED2C1FF8D60030629E /* SnapKit */; };
+		AD960AF02C1FFB520030629E /* AdmobBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD960AEF2C1FFB520030629E /* AdmobBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		AD960AD82C1FF5E00030629E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD960ADA2C1FF5E10030629E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD960ADD2C1FF5E10030629E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD960AE42C1FF7A80030629E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD960AE92C1FF7E80030629E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AD960AEA2C1FF8BF0030629E /* AdmobBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmobBannerViewController.swift; sourceTree = "<group>"; };
+		AD960AEF2C1FFB520030629E /* AdmobBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmobBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD960AE82C1FF7D20030629E /* GoogleMobileAds in Frameworks */,
+				AD960AEE2C1FF8D60030629E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +62,14 @@
 		AD960AD52C1FF5E00030629E /* AdmobSwiftUISample */ = {
 			isa = PBXGroup;
 			children = (
+				AD960AE92C1FF7E80030629E /* Info.plist */,
 				AD960AD62C1FF5E00030629E /* AdmobSwiftUISampleApp.swift */,
 				AD960AD82C1FF5E00030629E /* ContentView.swift */,
 				AD960ADA2C1FF5E10030629E /* Assets.xcassets */,
 				AD960ADC2C1FF5E10030629E /* Preview Content */,
+				AD960AE42C1FF7A80030629E /* AppDelegate.swift */,
+				AD960AEA2C1FF8BF0030629E /* AdmobBannerViewController.swift */,
+				AD960AEF2C1FFB520030629E /* AdmobBannerView.swift */,
 			);
 			path = AdmobSwiftUISample;
 			sourceTree = "<group>";
@@ -83,6 +98,10 @@
 			dependencies = (
 			);
 			name = AdmobSwiftUISample;
+			packageProductDependencies = (
+				AD960AE72C1FF7D20030629E /* GoogleMobileAds */,
+				AD960AED2C1FF8D60030629E /* SnapKit */,
+			);
 			productName = AdmobSwiftUISample;
 			productReference = AD960AD32C1FF5E00030629E /* AdmobSwiftUISample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,10 @@
 				Base,
 			);
 			mainGroup = AD960ACA2C1FF5E00030629E;
+			packageReferences = (
+				AD960AE62C1FF7D20030629E /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				AD960AEC2C1FF8D60030629E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AD960AD42C1FF5E00030629E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD960AF02C1FFB520030629E /* AdmobBannerView.swift in Sources */,
+				AD960AE52C1FF7A80030629E /* AppDelegate.swift in Sources */,
 				AD960AD92C1FF5E00030629E /* ContentView.swift in Sources */,
+				AD960AEB2C1FF8BF0030629E /* AdmobBannerViewController.swift in Sources */,
 				AD960AD72C1FF5E00030629E /* AdmobSwiftUISampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +301,7 @@
 				DEVELOPMENT_TEAM = HDFLLXK789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdmobSwiftUISample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +331,7 @@
 				DEVELOPMENT_TEAM = HDFLLXK789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdmobSwiftUISample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +372,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD960AE62C1FF7D20030629E /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+		AD960AEC2C1FF8D60030629E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD960AE72C1FF7D20030629E /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD960AE62C1FF7D20030629E /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		AD960AED2C1FF8D60030629E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD960AEC2C1FF8D60030629E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD960ACB2C1FF5E00030629E /* Project object */;
 }
